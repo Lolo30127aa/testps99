@@ -1,0 +1,183 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("💎Sapphire💎 / PS99 script by Midnight#9066", colors)
+
+local Tab = Window:NewTab("🐾PetDuping🐾")
+local mainSection = Tab:NewSection("PetDuping")
+
+local Tab = Window:NewTab("🛡️SmartProtectionV1🛡️")
+local SmartprotectionSection = Tab:NewSection("Smartprotection")
+
+local Tab = Window:NewTab("🌽AutofarmV1🌽")
+local AutofarmV1Section = Tab:NewSection("Autofarm")
+
+local Tab = Window:NewTab("💰PaidKey💰")
+local PaidKeySection = Tab:NewSection("PaidKey")
+
+local Tab = Window:NewTab("🧨NukeV1🧨")
+local NukeSection = Tab:NewSection("Nuke")
+
+local Tab = Window:NewTab("🐞TradeScam🐞")
+local TradeScamSection = Tab:NewSection("TradeScam")
+
+
+
+
+
+
+
+mainSection:NewLabel("Dupe the pet your currenctly equiping")
+SmartprotectionSection:NewLabel("Protects you from scam Script and Roblox detection")
+AutofarmV1Section:NewLabel("Farm For you!")
+PaidKeySection:NewLabel("Paid Version of the script! thanks for support")
+NukeSection:NewLabel("Fuck the server xD")
+TradeScamSection:NewLabel("IN BETA!")
+SmartprotectionSection:NewLabel("ONLY ACTIVATE THE EXTREME PROTECTION IN URGENCY CASE")
+
+
+mainSection:NewToggle("BackroomAutofarm", "Autofarm in the backrooms", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
+
+
+
+
+SmartprotectionSection:NewToggle("ExtremeProtectionPanic", "Activate that ONLY if your falling for a scam without the protection on.", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
+
+
+
+AutofarmV1Section:NewToggle("GemsFarm", "Farm gems for you", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
+
+AutofarmV1Section:NewTextBox("Enter the Area You are In", "The autofarm Will go to the next Area When the next area is unlockable", function(txt)
+	print(txt)
+end)
+
+
+
+
+
+
+
+
+
+TradeScamSection:NewToggle("TradeScam", "Activate Or Disable tradeScam (IN BETA)", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
+
+
+
+
+
+NukeSection:NewSlider("NukePower", "Print how much you wanna fuck the server", 1000, 1, function(s)
+end)
+
+
+
+
+
+
+mainSection:NewTextBox("DupedPet", "Print how much pet you want to dupe", function(txt)
+	print(txt)
+end)
+
+
+
+
+
+
+TradeScamSection:NewDropdown("Choose How to fuck trade", "DropdownInf", {"Fucking ReplicatedStorage", "Fucking Trade System", "Comming soon"}, function(currentOption)
+    print(currentOption)
+end)
+
+
+
+
+
+
+NukeSection:NewDropdown("Choose How to fuck server", "DropdownInf", {"LagServer", "FuckPet", "FuckSecondWorld"}, function(currentOption)
+    print(currentOption)
+end)
+
+
+NukeSection:NewButton("Nuke", "Fuck The Server(your protected) ", function()
+    print("Clicked")
+end)
+
+
+
+
+mainSection:NewButton("Dupe pet", "Dupes your pet (you need to have the pet you wanna dupe xD)", function()
+    print("Clicked")
+end)
+
+
+PaidKeySection:NewTextBox("exemple : XED3-3DAS-D93D", "Put your paidkey here!", function(txt)
+	print(txt)
+end)
+
+
+
+
+SmartprotectionSection:NewToggle("SmartProtectionV1", "Protect you from scams, and ban", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+AutofarmV1Section:NewToggle("AutofarmV1", "farm for you", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
+SmartprotectionSection:NewSlider("ProtectionAggresivity", "1=bad protection 500=aggresive protection", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    
+end)
+
+
+
+local colors = {
+    SchemeColor = Color3.fromRGB(255,255,255),
+    Background = Color3.fromRGB(0, 0, 0),
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
